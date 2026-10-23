@@ -1,0 +1,148 @@
+/* ===== 1. Designtokens ===== */
+:root {
+    --farg-lila: #6b005a;
+    --farg-bakgrund: #dedede;
+    --farg-ruta: #ececec;
+    --farg-text: #111111;
+    --farg-vit: #ffffff;
+  
+    --typsnitt-rubrik: "Josefin Sans", sans-serif;
+    --typsnitt-text: "Poppins", sans-serif;
+  
+    --max-bredd: 1040px;
+    --avstand: 40px;
+  }
+  
+  /* ===== 2. Grund ===== */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0 24px;
+    background: var(--farg-bakgrund);
+    color: var(--farg-text);
+    font-family: var(--typsnitt-text);
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  /* ===== 3. Header och meny ===== */
+  .header {
+    padding: 40px 0;
+  }
+  
+  .logga {
+    width: 64px;
+    margin: 0 auto 48px;
+  }
+  
+  .meny {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .meny a {
+    color: var(--farg-text);
+    font-family: var(--typsnitt-rubrik);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .meny a:hover {
+    color: var(--farg-lila);
+  }
+  
+  /* ===== 4. Typografi ===== */
+  h1 {
+    font-family: var(--typsnitt-rubrik);
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.15;
+    max-width: 800px;
+    margin: 0 auto 16px;
+  }
+  
+  h2, .etikett {
+    color: var(--farg-lila);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 16px;
+  }
+  
+  .ingress {
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  /* ===== 5. Sektioner och rutor ===== */
+  main {
+    max-width: var(--max-bredd);
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: var(--avstand);
+  }
+  
+  .ruta {
+    background: var(--farg-ruta);
+    padding: 96px 24px;
+  }
+  
+  /* ===== 6. Listor och länkar ===== */
+  .lista {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+  }
+  
+  .ruta a {
+    color: var(--farg-text);
+    text-decoration: none;
+  }
+  
+  .mejl {
+    font-weight: 600;
+  }
+  
+  /* ===== 7. Kolumner, rader och footer ===== */
+  .kolumner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .rader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .footer {
+    max-width: var(--max-bredd);
+    margin: 0 auto var(--avstand);
+    padding: 96px 24px;
+    background: var(--farg-lila);
+  }
+  
+  .footer h2 {
+    color: var(--farg-vit);
+  }
+  
+  .footer .logga {
+    width: 48px;
+    margin: 0 auto;
+  }
+  

@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min one pager</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grunderna i HTML och CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    Hej
+  <header class="header">
+    <img class="logga" src="images/lama-svart.svg" alt="Lama – sidans logga">
+    <nav>
+      <ul class="meny">
+        <li><a href="#typografi">Typografi</a></li>
+        <li><a href="#bild">Bild</a></li>
+        <li><a href="#listor">Listor</a></li>
+        <li><a href="#lankar">Länkar</a></li>
+        <li><a href="#kolumner">Kolumner</a></li>
+        <li><a href="#rader">Rader</a></li>
+        <li><a href="#footer">Footer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="typografi" class="ruta">
+      <p class="etikett">Typografi</p>
+      <h1>Den här sidan ska hjälpa dig att förstå grunderna i programmering</h1>
+      <p class="ingress">Genom enkla exempel alla kan följa</p>
+    </section>
+    <section id="bild">
+      <h2>Bild</h2>
+      <img src="images/bild-stilleben.jpg" alt="Målning: en flätad korg med apelsiner och citroner, med blå handskar och gröna kvistar bredvid">
+    </section>
+
+    <section id="listor" class="ruta">
+      <h2>Listor</h2>
+      <ul class="lista">
+        <li>punkt</li>
+        <li>punkt</li>
+        <li>punkt</li>
+      </ul>
+    </section>
+    <section id="lankar" class="ruta">
+      <h2>Länkar</h2>
+      <p><a href="https://sv.wikipedia.org">wikipedia</a></p>
+      <p><a class="mejl" href="mailto:din@mail.com">din@mail.com</a></p>
+    </section>
+    <section id="kolumner">
+      <h2>Kolumner</h2>
+      <div class="kolumner">
+        <img src="images/kolumn-1-vetefalt.jpg" alt="Målning: ett grönt vetefält under en himmel med virvlande moln">
+        <img src="images/kolumn-2-rosor.jpg" alt="Målning: vita rosor i en vas mot en ljusgrön bakgrund">
+        <img src="images/kolumn-3-tradgard.jpg" alt="Målning: ett vitt hus med orange tak bakom en trädgård full av röda blommor">
+      </div>
+    </section>
+
+    <section id="rader">
+      <h2>Rader</h2>
+      <div class="rader">
+        <img src="images/rad-1-kulle.jpg" alt="Japanskt träsnitt: en grön kulle med blommande träd i solnedgången">
+        <img src="images/rad-2-klippa.jpg" alt="Punktmålning: en grön klippa vid ett ljust hav">
+        <img src="images/rad-3-parasoll.jpg" alt="Målning: en kvinna med grönt parasoll mot en blå himmel med moln">
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <h2>Footer</h2>
+    <img class="logga" src="images/lama-vit.svg" alt="">
+  </footer>
 </body>
 </html>
